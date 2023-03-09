@@ -1,0 +1,33 @@
+#Codeforce 1316A
+
+case=int(input())
+
+for i in range(case):
+
+    n,m = (int(v) for v in input().split())
+
+    list1=[int(u) for u in input().split()]
+
+    total=0
+
+    for j in range(len(list1)):
+
+        total+=list1[j]
+
+        if total >= m:
+
+            print(m)
+
+            break
+
+        else:
+
+            continue
+
+    if total < m:
+
+        print(total)
+
+    else:
+
+        pass

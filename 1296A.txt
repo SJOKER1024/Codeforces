@@ -1,0 +1,43 @@
+#Codeforce 1296A
+
+case=int(input())
+
+for i in range(case):
+
+    odd=0
+
+    even=0
+
+    num=int(input())
+
+    list1=[int(v) for v in input().split()]
+
+    for j in range(num):
+
+        if list1[j] % 2 == 0:
+
+            even += 1
+
+        else:
+
+            odd += 1
+
+        if even != 0 and odd != 0:
+
+            print("YES")
+
+            break
+
+        if j == num - 1:
+ 
+            if odd % 2 == 1:
+
+                print("YES")
+
+            else:
+
+                print("No")
+
+        else:
+
+            pass

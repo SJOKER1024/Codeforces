@@ -1,0 +1,9 @@
+#Codeforce 1373B
+case=int(input())
+for i in range(case):
+    x=input()
+    y=min(x.count("1"),x.count("0"))
+    if y%2==1:
+        print("DA")
+    else:
+        print("NET")

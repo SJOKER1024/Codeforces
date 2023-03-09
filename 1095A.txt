@@ -1,0 +1,15 @@
+#Codeforce 1095A
+
+s=int(input())
+
+str1=input()
+
+str2=""
+
+k=int((s*2)**0.5)
+
+for i in range(k):
+
+    str2 += str1[i*(i+1)//2]
+
+print(str2)

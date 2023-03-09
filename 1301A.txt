@@ -1,0 +1,15 @@
+#Codeforce 1301A
+case = int(input())
+for i in range(case):
+    count=0
+    a = input().strip("\n\r")
+    b = input().strip("\n\r")
+    c = input().strip("\n\r")
+    for j in range(len(a)):
+        if c[j] == a[j] or c[j] == b[j]:
+            count += 1
+        else:
+            print("NO")
+            break
+    if count == len(a):
+        print("YES")

@@ -1,0 +1,19 @@
+#Codeforce 1143A
+
+door=int(input())
+
+list1=[int(v) for v in input().split()]
+
+list2=list1[::-1]
+
+for i in range(1,len(list2)):
+
+    if list2[i] != list2[i-1]:
+
+        print(door-i)
+
+        break
+
+    else:
+
+        pass

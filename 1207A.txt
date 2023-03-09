@@ -1,0 +1,39 @@
+#Codeforce 1207A
+
+case=int(input())
+
+for i in range(case):
+
+    b,p,f = (int(v) for v in input().split())
+
+    h,c = (int(u) for u in input().split())
+
+    num=b//2
+
+    if h > c:
+
+        if num > p + f:
+
+            print(p*h + f*c)
+
+        elif num > p:
+
+            print(p*h + (num - p)*c)
+
+        else:
+
+            print(num*h)
+
+    else:
+
+        if num > f + p:
+
+            print(f*c + p*h)
+
+        elif num > f:
+
+            print(f*c + (num - f)*h)
+
+        else:
+
+            print(num*c)

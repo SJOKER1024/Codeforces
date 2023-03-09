@@ -1,0 +1,10 @@
+#Codeforce 1248A
+case=int(input())
+for i in range(case):
+    a=input()
+    x=[int(v)%2 for v in input().split()]
+    b=input()
+    y=[int(u)%2 for u in input().split()]
+    ox=sum(x)
+    oy=sum(y)
+    print(ox*oy+(len(x)-ox)*(len(y)-oy))

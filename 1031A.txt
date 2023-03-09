@@ -1,0 +1,5 @@
+#Codeforce 1031A
+
+w,h,k = (int(v) for v in input().split())
+
+print((2*(2*w+2*h - 4) - 16*(k - 1))*k//2)

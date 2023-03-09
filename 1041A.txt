@@ -1,0 +1,4 @@
+#Codeforce 1041A
+n = int(input())
+list1 = [int(v) for v in input().split()]
+print((max(list1) - min(list1)) - n + 1)

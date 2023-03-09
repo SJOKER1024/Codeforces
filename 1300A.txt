@@ -1,0 +1,21 @@
+#Codeforce 1300A
+
+case=int(input())
+
+for i in range(case):
+
+    num=int(input())
+
+    list1=[int(v) for v in input().split()]
+
+    x=list1.count(0)
+
+    y=sum(list1)
+
+    if x+y==0:
+
+        print(x+1)
+
+    else:
+
+        print(x)

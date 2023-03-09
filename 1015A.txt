@@ -1,0 +1,35 @@
+#Codeforce 1015A
+
+n,m = (int(v) for v in input().split())
+
+list1=[]
+
+for i in range(m):
+
+    list1.append(i+1)
+
+for j in range(n):
+
+    l,r = (int(u) for u in input().split())
+
+    for k in range(l,r+1):
+
+        list1[k-1]=0
+
+x=m - list1.count(0)
+
+ans=""
+
+for t in range(m):
+
+    if list1[t]!=0:
+
+        ans += (str(list1[t])+" ")
+
+    else:
+
+        pass
+
+print(x)
+
+print(ans.rstrip(" "))

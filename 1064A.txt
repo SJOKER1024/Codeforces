@@ -1,0 +1,13 @@
+#Codeforce 1064A
+
+list1 = [int(v) for v in input().split()]
+
+list1.sort()
+
+if list1[0] + list1[1] > list1[2]:
+
+    print(0)
+
+else:
+
+    print(list1[2]-list1[1]-list1[0]+1)

@@ -1,0 +1,20 @@
+#Codeforce 1180B
+n=int(input())
+list1=[int(v) for v in input().split()]
+list2=[]
+ans=""
+for i in range(n):
+    if list1[i] >= 0:
+        list2.append(-1*list1[i] - 1)
+    else:
+        list2.append(list1[i])
+if n%2 == 0:
+    for j in range(n):
+        ans += (str(list2[j]) + " ")
+    print(ans.rstrip(" "))
+else:
+    x=list2.index(min(list2))
+    list2[x] = -1*min(list2) - 1
+    for j in range(n):
+        ans += (str(list2[j]) + " ")
+    print(ans.rstrip(" "))

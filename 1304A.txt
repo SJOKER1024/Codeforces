@@ -1,0 +1,8 @@
+#Codeforce 1304A
+case=int(input())
+for i in range(case):
+    x,y,a,b=(int(v) for v in input().split())
+    if (y-x) % (a+b) == 0:
+        print((y-x)//(a+b))
+    else:
+        print(-1)

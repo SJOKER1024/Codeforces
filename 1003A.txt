@@ -1,0 +1,13 @@
+#Codeforce 1003A
+
+list1=[0]*100
+
+coin=int(input())
+
+str1=[int(v) for v in input().split()]
+
+for i in range(len(str1)):
+
+    list1[str1[i]-1] += 1
+
+print(max(list1))

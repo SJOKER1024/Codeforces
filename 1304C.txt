@@ -1,0 +1,23 @@
+#Codeforce 1304C
+case=int(input())
+for i in range(case):
+    count=0
+    m,a=(int(v) for v in input().split())
+    b=a
+    s=0
+    for j in range(m):
+        t,c,d=(int(u) for u in input().split())
+        a=a-(t-s)
+        b=b+(t-s)
+        if b < c or d < a:
+            print("NO")
+            for k in range(m-j-1):
+                t,c,d=(int(u) for u in input().split())
+            break
+        else:
+            count+=1
+            a=max(a,c)
+            b=min(b,d)
+            s=t
+    if count==m:
+        print("YES")

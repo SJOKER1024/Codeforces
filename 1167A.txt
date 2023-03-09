@@ -1,0 +1,21 @@
+#Codeforce 1167A
+
+case=int(input())
+
+for i in range(case):
+
+    length=int(input())
+
+    num=input().strip("\n")
+
+    if num.find("8")==-1:
+
+        print("NO")
+
+    elif length - num.find("8") < 11:
+
+        print("NO")
+
+    else:
+
+        print("YES")

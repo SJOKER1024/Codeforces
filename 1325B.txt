@@ -1,0 +1,6 @@
+#Codeforce 1325B
+case=int(input())
+for i in range(case):
+    n=int(input())
+    a=set([int(v) for v in input().split()])
+    print(len(a))

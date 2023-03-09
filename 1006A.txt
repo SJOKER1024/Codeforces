@@ -1,0 +1,25 @@
+#Codeforce 1006A
+
+num=int(input())
+
+list1=[int(v) for v in input().split()]
+
+str1=""
+
+for i in range(len(list1)*2):
+
+    if i%2 == 0:
+
+        if list1[i//2]%2 == 0:
+
+            str1 += str(list1[i//2] - 1)
+
+        else:
+
+            str1 += str(list1[i//2])
+
+    else:
+
+        str1 += " "
+
+print(str1)

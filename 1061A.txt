@@ -1,0 +1,6 @@
+#Codeforce 1061A
+n,s = (int(v) for v in input().split())
+if s%n == 0:
+    print(s//n)
+else:
+    print(s//n + 1)

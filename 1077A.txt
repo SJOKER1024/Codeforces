@@ -1,0 +1,15 @@
+#Codeforce 1077A
+
+case=int(input())
+
+for i in range(case):
+
+    a,b,k=(int(v) for v in input().split())
+
+    if k%2==0:
+
+        print((a-b)*k//2)
+
+    else:
+
+        print((a-b)*(k-1)//2 + a)

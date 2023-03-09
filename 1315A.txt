@@ -1,0 +1,9 @@
+#Codeforce 1315A
+
+case=int(input())
+
+for i in range(case):
+
+    a,b,x,y = (int(v) for v in input().split())
+
+    print(max(x*b,(a-1-x)*b,a*y,a*(b-1-y)))

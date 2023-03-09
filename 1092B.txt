@@ -1,0 +1,15 @@
+#Codeforce 1092B
+
+student=int(input())
+
+list1=[int(v) for v in input().split()]
+
+list1.sort()
+
+ans=0
+
+for i in range(len(list1)//2):
+
+    ans+=(list1[2*i+1] - list1[2*i])
+
+print(ans)

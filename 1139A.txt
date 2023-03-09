@@ -1,0 +1,19 @@
+#Codeforce 1139A
+
+length=int(input())
+
+str1=input().strip("\n")
+
+ans=0
+
+for i in range(length):
+
+    if int(str1[i])%2 == 0:
+
+        ans += i+1
+
+    else:
+
+        pass
+
+print(ans)

@@ -1,0 +1,21 @@
+#Codeforce 1017A
+
+student=int(input())
+
+Thomas=sum([int(v) for v in input().split()])
+
+rank=1
+
+for i in range(student-1):
+
+    score=sum([int(u) for u in input().split()])
+
+    if score > Thomas:
+
+        rank+=1
+
+    else:
+
+        pass
+
+print(rank)

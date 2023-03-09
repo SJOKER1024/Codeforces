@@ -1,0 +1,13 @@
+#Codeforce 1146A
+
+x=input()
+
+y=x.count("a")
+
+if len(x)<2*y:
+
+    print(len(x))
+
+else:
+
+    print(2*y-1)

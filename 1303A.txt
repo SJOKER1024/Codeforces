@@ -1,0 +1,9 @@
+#Codeforce 1303A
+
+case=int(input())
+
+for i in range(case):
+
+    x=input().strip("0")
+
+    print(x.count("0"))

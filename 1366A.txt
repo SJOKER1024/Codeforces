@@ -1,0 +1,10 @@
+#Codeforce 1366A
+case=int(input())
+for i in range(case):
+    x,y=(int(v) for v in input().split())
+    if x > y*2:
+        print(y)
+    elif y > x*2:
+        print(x)
+    else:
+        print((x+y)//3)

@@ -1,0 +1,5 @@
+#Codeforce 1325A
+case=int(input())
+for i in range(case):
+    x=int(input())
+    print(str(x-1)+" "+"1")

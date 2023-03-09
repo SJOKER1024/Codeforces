@@ -1,0 +1,33 @@
+#Codeforce 1136A
+
+chapter=int(input())
+
+list1=[]
+
+for i in range(chapter):
+
+    x,y = (int(v) for v in input().split())
+
+    list1.append(x)
+
+    list1.append(y)
+
+page=int(input())
+
+j=0
+
+complete=0
+
+while j >= 0:
+
+    if list1[2*j] <= page and page <= list1[2*j+1]:
+
+        print(chapter-complete)
+
+        break
+
+    else:
+
+        j+=1
+
+        complete+=1

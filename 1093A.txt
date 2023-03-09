@@ -1,0 +1,15 @@
+#Codeforce 1093A
+
+case=int(input())
+
+for i in range(case):
+
+    score=int(input())
+
+    if score <= 7:
+
+        print(1)
+
+    else:
+
+        print(score//7 + 1)

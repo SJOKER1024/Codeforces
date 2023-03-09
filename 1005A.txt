@@ -1,0 +1,27 @@
+#Codeforce 1005A
+
+num=int(input())
+
+list1=[v for v in input().split()]
+
+stair=1
+
+ans=""
+
+for i in range(num-1):
+
+    if list1[i+1]=="1":
+
+        stair+=1
+
+        ans+=(list1[i]+" ")
+
+    else:
+
+        pass
+
+ans+=list1[num-1]
+
+print(stair)
+
+print(ans)

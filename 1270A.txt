@@ -1,0 +1,19 @@
+#Codeforce 1270A
+
+case=int(input())
+
+for i in range(case):
+
+    n,a,b = (int(v) for v in input().split())
+
+    first = input()
+
+    second = input()
+
+    if str(n) in first:
+
+        print("YES")
+
+    else:
+
+        print("NO")

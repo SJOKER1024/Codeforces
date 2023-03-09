@@ -1,0 +1,31 @@
+#Codeforce 1244A
+
+case=int(input())
+
+for i in range(case):
+
+    a,b,c,d,k = (int(v) for v in input().split())
+
+    if a%c==0:
+
+        x=a//c
+
+    else:
+
+        x=a//c + 1
+
+    if b%d==0:
+
+        y=b//d
+
+    else:
+
+        y=b//d + 1
+
+    if x + y <= k:
+
+        print(str(x)+" "+str(y))
+
+    else:
+
+        print(-1)

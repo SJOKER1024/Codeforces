@@ -1,0 +1,9 @@
+#Codeforce 1196A
+
+case=int(input())
+
+for i in range(case):
+
+    x,y,z=(int(v) for v in input().split())
+
+    print((x+y+z)//2)

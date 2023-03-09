@@ -1,0 +1,7 @@
+#Codeforce 1285A
+
+command_num=int(input())
+
+str1=input()
+
+print(command_num + 1)

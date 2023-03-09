@@ -1,0 +1,19 @@
+#Codeforce 1281A
+
+case=int(input())
+
+for i in range(case):
+
+    string=input()[::-1]
+
+    if string[0:2]=="op":
+
+        print("FILIPINO")
+
+    elif string[0:2]=="us":
+
+        print("JAPANESE")
+
+    else:
+
+        print("KOREAN")

@@ -1,0 +1,15 @@
+#Codeforce 1328A
+
+case=int(input())
+
+for i in range(case):
+
+    a,b = (int(v) for v in input().split())
+
+    if a%b == 0:
+
+        print(0)
+
+    else:
+
+        print(b - (a%b))

@@ -1,0 +1,9 @@
+#Codeforce 1283A
+
+case=int(input())
+
+for i in range(case):
+
+    h,m=(int(v) for v in input().split())
+
+    print(1440 - h*60 - m)
