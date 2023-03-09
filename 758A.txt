@@ -1,0 +1,7 @@
+#Codeforce 758A
+
+people=int(input())
+
+welfare=[int(v) for v in input().split()]
+
+print(max(welfare)*people - sum(welfare))

@@ -1,0 +1,27 @@
+#Codeforce 427A
+
+event=int(input())
+
+list1 = [int(v) for v in input().split()]
+
+police=0
+
+ans=0
+
+for i in range(event):
+
+    if list1[i] > 0:
+
+        police += list1[i]
+
+    else:
+
+        if police == 0:
+
+            ans += 1
+
+        else:
+
+            police += list1[i]
+
+print(ans)

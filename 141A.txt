@@ -1,0 +1,11 @@
+#Codeforce 141A
+a=[v for v in input().strip("\n\r")]
+b=[u for u in input().strip("\n\r")]
+c=[w for w in input().strip("\n\r")]
+d=a+b
+d.sort()
+c.sort()
+if c == d:
+    print("YES")
+else:
+    print("NO")

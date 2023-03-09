@@ -1,0 +1,23 @@
+#Codeforce 721A
+
+length=int(input())
+
+str1=input().replace("W"," ")
+
+list1=[v for v in str1.split()]
+
+print(len(list1))
+
+ans=""
+
+for i in range(len(list1)*2):
+
+    if i%2==0:
+
+        ans+=str(len(list1[i//2]))
+
+    else:
+
+        ans+=" "
+
+print(ans)

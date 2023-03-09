@@ -1,0 +1,5 @@
+#Codeforce 581A
+
+r,b = (int(v) for v in input().split())
+
+print(str(min(r,b))+" "+str(abs(r-b)//2))

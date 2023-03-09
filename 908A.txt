@@ -1,0 +1,9 @@
+#Codeforce 908A
+ans=0
+list1=["a","e","i","o","u"]
+list2=["1","3","5","7","9"]
+x=[v for v in input().strip("\n\r")]
+for i in range(len(x)):
+    if x[i] in list1 or x[i] in list2:
+        ans+=1
+print(ans)

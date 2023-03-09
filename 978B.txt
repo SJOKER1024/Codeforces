@@ -1,0 +1,33 @@
+#Codeforce 978B
+
+length=int(input())
+
+str1=input().strip("\n")
+
+str2=""
+
+ans=0
+
+for i in range(length):
+
+    if str1[i]=="x":
+
+        str2+="x"
+
+    else:
+
+        str2+=" "
+
+list1=[v for v in str2.split()]
+
+for j in range(len(list1)):
+
+    if len(list1[j]) >=3:
+
+        ans+=(len(list1[j]) - 2)
+
+    else:
+
+        pass
+
+print(ans)

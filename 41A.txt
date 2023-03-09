@@ -1,0 +1,7 @@
+#Codeforce 41A
+x=input().strip("\n\r")
+y=input().strip("\n\r")
+if y == x[::-1]:
+    print("YES")
+else:
+    print("NO")

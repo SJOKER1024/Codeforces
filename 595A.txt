@@ -1,0 +1,21 @@
+#Codeforce 595A
+
+ans=0
+
+n,m = (int(v) for v in input().split())
+
+for i in range(n):
+
+    list1=[int(u) for u in input().split()]
+
+    for j in range(m):
+
+        if list1[2*j] + list1[2*j + 1] > 0:
+
+            ans+=1
+
+        else:
+
+            pass
+
+print(ans)

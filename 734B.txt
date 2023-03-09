@@ -1,0 +1,5 @@
+#Codeforce 734B
+a,b,c,d=(int(v) for v in input().split())
+x=min(a,c,d)
+y=min(a-x,b)
+print(256*x+32*y)

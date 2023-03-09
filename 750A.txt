@@ -1,0 +1,25 @@
+#Codeforce 750A
+
+a,b=(int(v) for v in input().split())
+
+t=0
+
+for i in range(a):
+
+    t += (i+1)*5
+
+    if t + b > 240:
+
+        print(i)
+
+        break
+
+    elif i == a-1 and t + b <= 240:
+
+        print(i+1)
+
+        break
+
+    else:
+
+        pass

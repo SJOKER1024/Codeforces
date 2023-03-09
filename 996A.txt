@@ -1,0 +1,17 @@
+#Codeforces 996A
+
+x=int(input())
+
+bill=0
+
+s=[100,20,10,5]
+
+for i in range(4):
+
+    bill+=x//s[i]
+
+    x=x%s[i]
+
+bill+=x
+
+print(bill)

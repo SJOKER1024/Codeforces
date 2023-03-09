@@ -1,0 +1,19 @@
+#Codeforce 116A
+
+stop=int(input())
+
+capacity=0
+
+ans=0
+
+for i in range(stop):
+
+    a,b=(int(v) for v in input().split())
+
+    capacity += (b-a)
+
+    if capacity >= ans:
+
+        ans = capacity
+
+print(ans)

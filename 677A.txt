@@ -1,0 +1,10 @@
+#Codeforce 677A
+width=0
+n,h = (int(v) for v in input().split())
+list1=[int(u) for u in input().split()]
+for i in range(n):
+    if list1[i] > h:
+        width+=2
+    else:
+        width+=1
+print(width)

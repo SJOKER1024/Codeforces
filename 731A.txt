@@ -1,0 +1,8 @@
+#Codeforce 731A
+name=input().strip("\n\r")
+first=abs(ord(name[0])-ord("a"))
+ans=min(first,26-first)
+for i in range(1,len(name)):
+    x=abs(ord(name[i])-ord(name[i-1]))
+    ans += min(x,26-x)
+print(ans)

@@ -1,0 +1,2 @@
+#Codeforce 630A
+print(25)

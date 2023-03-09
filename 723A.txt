@@ -1,0 +1,5 @@
+#Codeforce 723A
+
+a,b,c = (int(v) for v in input().split())
+
+print(max(a,b,c)-min(a,b,c))

@@ -1,0 +1,19 @@
+#Codeforce 987A
+
+dict1={"purple":"Power","green":"Time","blue":"Space","orange":"Soul","red":"Reality","yellow":"Mind"} 
+
+list1=["purple","green","blue","orange","red","yellow"]
+
+x=int(input())
+
+for i in range(x):
+
+    gem=input().strip("\n\r")
+
+    list1.remove(gem)
+
+print(len(list1))
+
+for j in range(len(list1)):
+
+    print(dict1[list1[j]])

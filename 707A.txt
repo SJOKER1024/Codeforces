@@ -1,0 +1,12 @@
+#Codeforce 707A
+count=0
+x,y=(int(v) for v in input().split())
+for i in range(x):
+    z=[u for u in input().split()]
+    if "C" in z or "M" in z or "Y" in z:
+        print("#Color")
+        break
+    else:
+        count+=1
+if count==x:
+    print("#Black&White")

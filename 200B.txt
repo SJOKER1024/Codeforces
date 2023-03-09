@@ -1,0 +1,7 @@
+#Codeforce 200B
+
+drink=int(input())
+
+list1=[int(v) for v in input().split()]
+
+print(sum(list1)/drink)

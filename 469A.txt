@@ -1,0 +1,13 @@
+#Codeforce 469A
+stage=int(input())
+x=input()
+y=input()
+x1=x[1::]
+y1=y[1::]
+x2=set(x1.split())
+y2=set(y1.split())
+z=x2 | y2
+if len(z) >= stage:
+    print("I become the guy.")
+else:
+    print("Oh, my keyboard!")

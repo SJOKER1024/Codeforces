@@ -1,0 +1,15 @@
+#Codeforce 749A
+
+x=int(input())
+
+if x%2==1:
+
+    print((x-1)//2)
+
+    print("2 "*((x-3)//2) + "3")
+
+else:
+
+    print(x//2)
+
+    print("2 "*((x-2)//2) + "2")

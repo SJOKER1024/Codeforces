@@ -1,0 +1,15 @@
+#Codeforce 984A
+
+n=int(input())
+
+list1=[int(v) for v in input().split()]
+
+list1.sort()
+
+if n%2==0:
+
+    print(list1[n//2 -1])
+
+else:
+
+    print(list1[(n-1)//2])

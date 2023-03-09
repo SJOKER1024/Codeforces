@@ -1,0 +1,17 @@
+#Codeforce 509A
+
+n=int(input())
+
+upper=2*(n-1)
+
+numi=1
+
+denumi=1
+
+for i in range(n-1):
+
+    numi=numi*(upper - i)
+
+    denumi=denumi*(i+1)
+
+print(numi//denumi)

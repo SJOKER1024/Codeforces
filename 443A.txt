@@ -1,0 +1,11 @@
+#Codeforce 443A
+
+s=set(v for v in input().strip("{}").split(", "))
+
+if s=={''}:
+
+    print(0)
+
+else:
+
+    print(len(s))

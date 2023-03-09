@@ -1,0 +1,13 @@
+#Codeforce 381A
+card=int(input())
+list1=[int(v) for v in input().split()]
+s=0
+d=0
+for i in range(card):
+    if i%2 == 0:
+        s += max(list1[0],list1[len(list1)-1])
+        list1.remove(max(list1[0],list1[len(list1)-1]))
+    else:
+        d += max(list1[0],list1[len(list1)-1])
+        list1.remove(max(list1[0],list1[len(list1)-1]))
+print(str(s)+" "+str(d))

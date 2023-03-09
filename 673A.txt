@@ -1,0 +1,10 @@
+#Codeforce 673A
+n = int(input())
+list1=[0] + [int(v) for v in input().split()] + [1000]
+ans=0
+for i in range(1,n+2):
+    if list1[i] - list1[i-1] <= 15:
+        ans = list1[i]
+    else:
+        print(min(ans+15,90))
+        break

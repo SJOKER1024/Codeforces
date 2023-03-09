@@ -1,0 +1,27 @@
+#Codeforce 268A
+
+team=int(input())
+
+hlist=[]
+
+glist=[]
+
+ans=0
+
+for i in range(team):
+
+    h,g=(int(v) for v in input().split())
+
+    hlist.append(h)
+
+    glist.append(g)
+
+for j in range(len(hlist)):
+
+    for k in range(len(glist)):
+
+        if hlist[j]==glist[k]:
+
+            ans+=1
+
+print(ans)

@@ -1,0 +1,13 @@
+#Codeforce 431A
+
+x=[int(v) for v in input().split()]
+
+car=0
+
+str1=input().strip("\n\r")
+
+for i in range(len(str1)):
+
+    car+=x[int(str1[i])-1]
+
+print(car)

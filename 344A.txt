@@ -1,0 +1,40 @@
+#Codeforce 344A
+
+magnet=int(input())
+
+string1=""
+
+for i in range(magnet):
+
+    string1 += input().strip("\n\r")
+
+print(string1.count("00")+string1.count("11")+1)
+
+#436ms,900KB
+======
+
+#Codeforce 344A
+
+magnet=int(input())
+
+pre=""
+
+group=0
+
+for i in range(magnet):
+
+    x=input().strip("\n\r")
+
+    if x==pre:
+
+        pre=x
+
+    else:
+
+        group+=1
+
+        pre=x
+
+print(group)
+
+#436ms,0KB

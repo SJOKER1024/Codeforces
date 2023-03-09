@@ -1,0 +1,4 @@
+#Codeforce 339A
+x=[v for v in input().split("+")]
+x.sort()
+print("+".join(x))

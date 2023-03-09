@@ -1,0 +1,5 @@
+#Codeforce 50A
+
+m,n = (int(v) for v in input().split())
+
+print(m*n//2)

@@ -1,0 +1,21 @@
+#Codeforce 734A
+
+game=int(input())
+
+x=input()
+
+A=x.count("A")
+
+D=game-A
+
+if A > D :
+
+    print("Anton")
+
+elif A < D:
+
+    print("Danik")
+
+else:
+
+    print("Friendship")

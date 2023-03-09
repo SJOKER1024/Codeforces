@@ -1,0 +1,8 @@
+#Codeforce 166A
+n,k = (int(v) for v in input().split())
+list1=[]
+for i in range(n):
+    p,t = (int(u) for u in input().split())
+    list1.append(1000*p - t)
+list1.sort(reverse=True)
+print(list1.count(list1[k-1]))

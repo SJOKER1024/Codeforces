@@ -1,0 +1,21 @@
+#Codeforce 994A
+
+n,m = (int(v) for v in input().split())
+
+list1=[u for u in input().split()]
+
+list2=[t for t in input().split()]
+
+ans=""
+
+for i in range(len(list1)):
+
+    if list1[i] in list2:
+
+        ans += (list1[i] + " ")
+
+    else:
+
+        pass
+
+print(ans.rstrip(" "))

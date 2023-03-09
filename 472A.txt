@@ -1,0 +1,6 @@
+#Codeforce 472A
+x=int(input())
+if x%2==0:
+    print("4 "+str(x-4))
+else:
+    print("9 "+str(x-9))

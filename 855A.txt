@@ -1,0 +1,10 @@
+#Codeforce 855A
+namelist=[]
+num=int(input())
+for i in range(num):
+    name=input().strip("\n\r")
+    if name not in namelist:
+        print("NO")
+        namelist.append(name)
+    else:
+        print("YES")

@@ -1,0 +1,15 @@
+#Codeforce 231A
+
+problem=int(input())
+
+solution=0
+
+for i in range(problem):
+
+    P,V,T = (int(v) for v in input().split())
+
+    if P+V+T >= 2:
+
+        solution += 1
+
+print(solution)

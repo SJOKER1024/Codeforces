@@ -1,0 +1,27 @@
+#Codeforce 897A
+
+n,m = (int(v) for v in input().split())
+
+x=[v for v in input().strip("\n\r")]
+
+ans=""
+
+for i in range(m):
+
+    l,r,c_1,c_2 = (v for v in input().split())
+
+    for j in range(int(l)-1,int(r)):
+
+        if x[j] == c_1:
+
+            x[j] = c_2
+
+        else:
+
+            pass
+
+for k in range(len(x)):
+
+    ans+=x[k]
+
+print(ans)

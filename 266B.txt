@@ -1,0 +1,29 @@
+#Codeforces 266B
+
+n,t = (int(v) for v in input().split())
+x=input().rstrip("\n\r")
+y=x[::-1]
+ans=[]
+block=0
+for i in range(t):
+    for j in range(n):
+        if y[j] == "G":
+            ans.append("G")
+            block=0
+        else:
+            if block == 1:
+                ans.append("B")
+            else:
+                if j != 0:
+                    ans.pop()
+                    ans.append("B")
+                    ans.append("G")
+                    block=1
+                else:
+                    ans.append("B")
+                    block=1
+    y=""
+    for k in range(n):
+        y += ans[k]
+    ans=[]
+print(y[::-1])

@@ -1,0 +1,13 @@
+#Codeforce 686A
+n,k = (int(v) for v in input().split())
+d=0
+for i in range(n):
+    a,b = input().split()
+    if a == "+":
+        k += int(b)
+    else:
+        if k < int(b):
+            d += 1
+        else:
+            k -= int(b)
+print(str(k)+" "+str(d))

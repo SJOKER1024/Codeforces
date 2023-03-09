@@ -1,0 +1,43 @@
+#Codeforce 245A
+
+line=int(input())
+
+xa=0
+
+xb=0
+
+ya=0
+
+yb=0
+
+for i in range(line):
+
+    t,x,y=(int(v) for v in input().split())
+
+    if t == 1:
+
+        xa += x
+
+        ya += y
+
+    else:
+
+        xb += x
+
+        yb += y
+
+if xa >= ya:
+
+    print("LIVE")
+
+else:
+
+    print("DEAD")
+
+if xb >= yb:
+
+    print("LIVE")
+
+else:
+
+    print("DEAD")

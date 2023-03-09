@@ -1,0 +1,5 @@
+#Codeforce 228A
+
+s=set([int(v) for v in input().split()])
+
+print(4 - len(s))

@@ -1,0 +1,33 @@
+#Codeforce 711A
+
+row=int(input())
+
+count=0
+
+list1=[]
+
+for i in range(row):
+
+    x=input()
+
+    if "OO" in x and count==0:
+
+        count+=1
+
+        list1.append(x.replace("OO","++",1))
+
+    else:
+
+        list1.append(x)
+
+if count==1:
+
+    print("YES")
+
+    for j in range(len(list1)):
+
+        print(list1[j])
+
+else:
+
+    print("NO")

@@ -1,0 +1,33 @@
+#Codeforce 58A
+x=input().strip("\n\r")
+y=len(x)
+t=0
+ans=""
+for i in range(y):
+    if x[i] == "h":
+        ans += "h"
+        t=i
+        break
+for j in range(t+1,y):
+    if x[j] == "e":
+        ans += "e"
+        t=j
+        break
+for k in range(t+1,y):
+    if x[k] == "l":
+        ans += "l"
+        t=k
+        break
+for l in range(t+1,y):
+    if x[l] == "l":
+        ans += "l"
+        t=l
+        break
+for m in range(t+1,y):
+    if x[m] == "o":
+        ans += "o"
+        break
+if ans == "hello":
+    print("YES")
+else:
+    print("NO")

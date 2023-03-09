@@ -1,0 +1,17 @@
+#Codeforce 867A
+
+length=int(input())
+
+string1=input()
+
+if string1[0]=="F":
+
+    print("No")
+
+elif string1[0]=="S" and string1[length-1]=="S":
+
+    print("No")
+
+else:
+
+    print("Yes")

@@ -1,0 +1,13 @@
+#Codeforce 236A
+
+str1=input().strip("\n\r")
+
+s=set(v for v in str1)
+
+if len(s)%2 == 0:
+
+    print("CHAT WITH HER!")
+
+else:
+
+    print("IGNORE HIM!")

@@ -1,0 +1,19 @@
+#Codeforces 1A
+
+n,m,a = (int(v) for v in input().split())
+
+if (n//a)*a==n:
+
+    x=n//a
+else:
+
+    x=n//a + 1
+
+if (m//a)*a==m:
+
+    y=m//a
+else:
+
+    y=m//a + 1
+
+print(x*y)
